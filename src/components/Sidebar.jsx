@@ -1,5 +1,7 @@
+import { Box } from "@mui/material"
+
 export const Sidebar = () =>{
   return (
-    <>Sidebar</>
+    <Box>Sidebar</Box>
   )
 }
