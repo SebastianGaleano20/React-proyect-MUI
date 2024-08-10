@@ -1,7 +1,7 @@
 import { Rightbar } from './components/Rightbar.jsx';
 import { Sidebar } from './components/Sidebar.jsx';
 import { Navbar } from './components/Navbar.jsx';
-import { Footer } from './components/Footer.jsx';
+import { Feed } from './components/Feed.jsx';
 import { Box, Stack } from '@mui/material';
 
 export const App = () => {
@@ -14,7 +14,7 @@ export const App = () => {
       <Navbar/>
       <Stack direction='row' spacing={2} justifyContent='space-between'>
       <Sidebar />
-      <Footer />
+      <Feed />
       <Rightbar />
       </Stack>
     </Box>

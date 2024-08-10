@@ -1,9 +1,9 @@
 import { Box } from "@mui/material"
 
-export const Footer = () =>{
+export const Feed = () =>{
   return (
     <Box p={2}>
-      Footer
+  
     </Box>
   )
 }

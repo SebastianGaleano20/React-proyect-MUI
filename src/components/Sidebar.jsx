@@ -9,7 +9,15 @@ import NightlightIcon from '@mui/icons-material/Nightlight';
 
 export const Sidebar = () =>{
   return (
-    <Box p={2} sx={{display:{xs: 'none',sm:'block'}}}>
+    <Box
+    p={2} 
+    sx={
+      {
+        display:{xs: 'none',sm:'block'},
+        backgroundColor: 'lightgreen',
+        height: '100vh'
+      }}
+    >
        <List>
           <ListItem disablePadding>
             <ListItemButton component='a' href="#Home">
