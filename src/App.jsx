@@ -14,8 +14,8 @@ export const App = () => {
       <Navbar/>
       <Stack direction='row' spacing={2} justifyContent='space-between'>
       <Sidebar />
-      <Rightbar />
       <Footer />
+      <Rightbar />
       </Stack>
     </Box>
   );
