@@ -3,16 +3,16 @@ import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material"
 
 const CardStyled = styled(Card)({
     width: {
-      xs: '100%',    // Ancho completo en pantallas extra pequeñas
-      sm: '80%',     // 80% del ancho en pantallas pequeñas
-      md: '60%',     // 60% del ancho en pantallas medianas
-      lg: '45%'      // 45% del ancho en pantallas grandes
+      xs: '100%',    
+      sm: '80%',     
+      md: '60%',   
+      lg: '45%'
     },
     height: {
-      xs: 'auto',    // Altura automática para pantallas extra pequeñas
-      sm: 'auto',    // Altura automática para pantallas pequeñas
-      md: '400px',   // Altura fija para pantallas medianas
-      lg: '500px'    // Altura fija para pantallas grandes
+      xs: 'auto', 
+      sm: 'auto',   
+      md: '400px',  
+      lg: '500px' 
     },
     display: 'flex',
     flexDirection: 'column',
@@ -21,17 +21,17 @@ const CardStyled = styled(Card)({
 
 const ImageStyled = styled(CardMedia)({
   height: {
-    xs: '150px',  // Altura para pantallas extra pequeñas
-    sm: '200px',  // Altura para pantallas pequeñas
-    md: '250px',  // Altura para pantallas medianas
-    lg: '300px'   // Altura para pantallas grandes
+    xs: '150px',  
+    sm: '200px',  
+    md: '250px', 
+    lg: '300px'  
   },
   width: '100%',
-  objectFit: 'cover', // Mantiene la proporción de la imagen
+  objectFit: 'cover',
 });
 export const Feed = () => {
   return (
-    <Grid container spacing={3} p={2} justifyContent='center' alignContent='center' alignItems='center'>
+    <Grid container spacing={3} p={2} justifyContent='center' alignContent='center' alignItems='center' height='100vh'>
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <CardStyled>
           <ImageStyled

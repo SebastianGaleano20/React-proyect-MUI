@@ -7,7 +7,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Switch from '@mui/material/Switch';
 import NightlightIcon from '@mui/icons-material/Nightlight';
 
-export const Sidebar = () =>{
+export const Sidebar = ({setMode, mode}) =>{
   return (
     <Box
     p={2} 
@@ -62,7 +62,7 @@ export const Sidebar = () =>{
               <ListItemIcon>
                 <NightlightIcon />
               </ListItemIcon>
-              <Switch />
+              <Switch onChange={e=>setMode(mode === 'light' ? 'dark' : 'light')} />
             </ListItemButton>
           </ListItem>
         </List>
