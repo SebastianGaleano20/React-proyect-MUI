@@ -13,9 +13,7 @@ export const Sidebar = () =>{
     p={2} 
     sx={
       {
-        display:{xs: 'none',sm:'block'},
-        backgroundColor: 'lightgreen',
-        height: '100vh'
+        display:{xs: 'none',sm:'none',md:'block'}
       }}
     >
        <List>

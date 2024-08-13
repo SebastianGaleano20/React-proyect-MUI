@@ -1,26 +1,42 @@
+import styled from "@emotion/styled";
 import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material"
 
-const cardStyle = {
-  width:'280px', 
-  height:'400px', 
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-};
-const imageStyle = {
-  height: '300px',  // Altura fija para la imagen
+const CardStyled = styled(Card)({
+    width: {
+      xs: '100%',    // Ancho completo en pantallas extra pequeñas
+      sm: '80%',     // 80% del ancho en pantallas pequeñas
+      md: '60%',     // 60% del ancho en pantallas medianas
+      lg: '45%'      // 45% del ancho en pantallas grandes
+    },
+    height: {
+      xs: 'auto',    // Altura automática para pantallas extra pequeñas
+      sm: 'auto',    // Altura automática para pantallas pequeñas
+      md: '400px',   // Altura fija para pantallas medianas
+      lg: '500px'    // Altura fija para pantallas grandes
+    },
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+});
+
+const ImageStyled = styled(CardMedia)({
+  height: {
+    xs: '150px',  // Altura para pantallas extra pequeñas
+    sm: '200px',  // Altura para pantallas pequeñas
+    md: '250px',  // Altura para pantallas medianas
+    lg: '300px'   // Altura para pantallas grandes
+  },
   width: '100%',
   objectFit: 'cover', // Mantiene la proporción de la imagen
-};
+});
 export const Feed = () => {
   return (
-    <Grid container spacing={2} justifyContent='center'>
-      <Grid item xs={12} sm={12} md={6} lg={3}>
-        <Card sx={cardStyle}>
-          <CardMedia
-            component="img"
+    <Grid container spacing={3} p={2} justifyContent='center' alignContent='center' alignItems='center'>
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <CardStyled>
+          <ImageStyled
+          component='img'
             image="https://veaargentina.vtexassets.com/arquivos/ids/817921/Alimento-Cat-Chow-Gatitos-Pescado-Carne-Vegetales-1-882637.jpg?v=638481881015700000"
-            sx={imageStyle}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -30,14 +46,13 @@ export const Feed = () => {
             Gato barato comida para gato
             </Typography>
           </CardContent>
-        </Card>
+        </CardStyled>
       </Grid>
-      <Grid item xs={12} sm={12} md={6} lg={3}>
-      <Card sx={cardStyle}>
-          <CardMedia
-            component="img"
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+      <CardStyled>
+          <ImageStyled
+          component='img'
             image="https://ardiaprod.vtexassets.com/arquivos/ids/290803/Alimento-Para-Gato-Pescado-y-Salmon-Gati-x-3-Kg-_1.jpg?v=638430138597500000"
-            sx={imageStyle}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -47,14 +62,13 @@ export const Feed = () => {
               Bolsa de 10kg sabor carne para gatos adultos
             </Typography>
           </CardContent>
-        </Card>
+        </CardStyled>
       </Grid>
-      <Grid item xs={12} sm={12} md={6} lg={3}>
-      <Card sx={cardStyle}>
-          <CardMedia
-            component="img"
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+      <CardStyled>
+          <ImageStyled
             image="https://jumboargentina.vtexassets.com/arquivos/ids/586411/Alimento-Para-Gatos-Whiskas-Pasta-Salmon-85-Gr-1-22182.jpg?v=637265784197070000"
-            sx={imageStyle}
+            component='img'
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -64,14 +78,13 @@ export const Feed = () => {
               Sobre de 85gr sabor Salmon
             </Typography>
           </CardContent>
-        </Card>
+        </CardStyled>
       </Grid>
-      <Grid item xs={12} sm={12} md={6} lg={3}>
-      <Card sx={cardStyle}>
-          <CardMedia
-            component="img"
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+      <CardStyled>
+          <ImageStyled
             image="https://jumboargentina.vtexassets.com/arquivos/ids/586411/Alimento-Para-Gatos-Whiskas-Pasta-Salmon-85-Gr-1-22182.jpg?v=637265784197070000"
-            sx={imageStyle}
+            component='img'
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -81,7 +94,7 @@ export const Feed = () => {
               Sobre de 85gr sabor Salmon
             </Typography>
           </CardContent>
-        </Card>
+        </CardStyled>
       </Grid>
     </Grid>
   )
