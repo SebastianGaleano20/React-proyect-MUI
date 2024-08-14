@@ -38,7 +38,9 @@ const UserBox = styled('Box')(({ theme }) => ({
 export const Navbar = () => {
   const [open, setOpen] = useState(false)
   return (
-    <AppBar position="stick">
+    <AppBar position="stick"  sx={{
+      boxShadow: 'none'
+    }}>
       <StyledToolbar>
         <Typography variant='h6' component='h2' sx={{ display: { xs: 'none', sm: 'block' } }}>PetLeon</Typography>
         <PetsIcon sx={{ display: { xs: 'block', sm: 'none' } }} />

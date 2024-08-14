@@ -9,8 +9,7 @@ import NightlightIcon from '@mui/icons-material/Nightlight';
 
 export const Sidebar = ({setMode, mode}) =>{
   return (
-    <Box
-    p={2} 
+    <Box 
     sx={
       {
         display:{xs: 'none',sm:'none',md:'block'}

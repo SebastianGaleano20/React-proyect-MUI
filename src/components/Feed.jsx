@@ -31,7 +31,7 @@ const ImageStyled = styled(CardMedia)({
 });
 export const Feed = () => {
   return (
-    <Grid container spacing={3} p={2} justifyContent='center' alignContent='center' alignItems='center' height='100vh'>
+    <Grid container spacing={3} p={2} justifyContent='center' alignContent='center' alignItems='center'  bgcolor={'background.default'} color={'text.primary'}>
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <CardStyled>
           <ImageStyled

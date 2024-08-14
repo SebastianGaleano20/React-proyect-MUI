@@ -18,7 +18,7 @@ export const App = () => {
       padding: 0
     }}>
       <Navbar/>
-      <Stack direction='row' justifyContent='space-between'>
+      <Stack direction='row' spacing={2} justifyContent='space-between'>
       <Sidebar setMode={setMode} mode={mode} />
       <Feed />
       </Stack>
