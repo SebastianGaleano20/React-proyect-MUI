@@ -1,11 +1,11 @@
 # Proyecto React + Vite + MUI (Material UI)
-- Pagina web estatica para practica integrando Material UI
-- Creacion de tema con paleta de colores
-- Configuracion para Dark mode
-- Creacion de componentes estilados (styled)
-- Integracion de diferentes componentes con iconos MUI
+- Pagina web estática para práctica integrando Material UI
+- Creación de tema con paleta de colores
+- Configuración para Dark mode
+- Creación de componentes estilados (styled)
+- Integración de diferentes componentes con iconos MUI
 - Responsive Design - Mobile first aplicado
-- Creacion de vistas para diferentes breakpoints
+- Creación de vistas para diferentes breakpoints
 - Uso de Grid y Grid Items
 
 LightMode:
